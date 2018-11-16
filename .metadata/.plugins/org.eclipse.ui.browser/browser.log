@@ -1,0 +1,19 @@
+
+nov. 13, 2018 12:30:55.18 NEW SESSION
+nov. 13, 2018 12:30:55.19 [10132:7404:1113/123055.184:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:30:57.34 [10132:7404:1113/123057.342:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:30:58.68 [10132:7404:1113/123058.680:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 101 is too big.
+nov. 13, 2018 12:30:59.50 [10132:7404:1113/123059.508:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:11.59 [10132:7404:1113/123111.598:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 101 is too big.
+nov. 13, 2018 12:31:11.84 [10132:7404:1113/123111.844:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:13.14 [10132:7404:1113/123113.147:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:13.76 [10132:7404:1113/123113.768:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:14.66 [10132:7404:1113/123114.669:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 101 is too big.
+nov. 13, 2018 12:31:15.93 [10132:7404:1113/123115.934:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:20.18 [10132:7404:1113/123120.188:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:20.42 [10132:7404:1113/123120.427:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 101 is too big.
+nov. 13, 2018 12:31:21.49 [10132:7404:1113/123121.493:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:31:24.92 [10132:7404:1113/123124.928:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 101 is too big.
+nov. 13, 2018 12:31:25.61 [10132:7404:1113/123125.609:ERROR:latency_info.cc(144)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+nov. 13, 2018 12:33:48.60 [10132:8884:1113/123348.605:ERROR:mcs_client.cc(707)] Failed to log in to GCM, resetting connection.
+nov. 13, 2018 13:13:48.93 [10132:7404:1113/131348.931:ERROR:CONSOLE(4374)] "No document", source: chrome-devtools://devtools/bundled/shell.js (4374)

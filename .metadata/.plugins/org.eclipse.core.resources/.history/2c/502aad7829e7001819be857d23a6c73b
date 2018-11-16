@@ -1,0 +1,28 @@
+package com.alvaro.database;
+
+import java.util.ArrayList;
+
+import com.alvaro.models.Usuario;
+import com.alvaro.models.Habitacion;
+
+public class BBDD {
+
+	public ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+	public ArrayList<Habitacion> habitaciones = new ArrayList<Habitacion>();
+	
+	private boolean fillUsuarios() {
+		usuarios.add(new Usuario(1, "Pepe", "p@p.es", null));
+		usuarios.add(new Usuario(2, "Pepa", "pa@p.es", null));
+		usuarios.add(new Usuario(3, "Pepi", "pi@p.es", null));
+	
+		return true;
+		
+		
+	}
+	
+	private boolean fillHabitaciones () {
+		habitaciones.add(new Habitacion(1, "Marques 26", 256, "Madrid"));
+		habitaciones.add(new Habitacion(1, "Provenzal 4", 25, "Madrid"));
+		habitaciones.add(new Habitacion(1, "Roca 20", 56, "Madrid"));
+	}
+}

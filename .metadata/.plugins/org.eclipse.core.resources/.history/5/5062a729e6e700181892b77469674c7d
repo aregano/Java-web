@@ -1,0 +1,25 @@
+package com.alvaro.database;
+
+import java.util.ArrayList;
+
+import com.alvaro.models.Cancion;
+
+public class BBDDCanciones {
+	
+	public ArrayList<Cancion> canciones = new ArrayList<Cancion>();
+
+	public BBDDCanciones() {
+		this.fillCanciones();
+	}
+	
+	private boolean fillCanciones() {
+		canciones.add(new Cancion(1, "Song", "Author", "mp3"));
+		canciones.add(new Cancion(2, "Song", "Author1","mp3"));
+		canciones.add(new Cancion(3, "Song", "Author2","mp3"));
+	                                                   
+		return true;
+		
+		
+	}
+	
+}

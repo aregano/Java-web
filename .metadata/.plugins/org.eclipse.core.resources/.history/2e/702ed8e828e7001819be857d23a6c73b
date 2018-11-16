@@ -1,0 +1,12 @@
+package com.alvaro.database;
+
+import java.util.ArrayList;
+
+import com.alvaro.models.Usuario;
+import com.alvaro.models.Habitacion;
+
+public class BBDD {
+
+	public ArrayList<Usuario> usuario = new ArrayList<Usuario>();
+	public ArrayList<Habitacion> habitaciones = new ArrayList<Habitacion>();
+}

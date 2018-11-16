@@ -1,0 +1,53 @@
+package com.alvaro.models;
+
+public class Cancion {
+
+	 private int id;
+	 private String name;
+	 private String author;
+	 private String mp3;
+	 
+	public Usuario(int id, String name, String author, String mp3) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.author = author;
+		this.mp3 = mp3;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getMp3() {
+		return mp3;
+	}
+
+	public void setMp3(String mp3) {
+		this.mp3 = mp3;
+	}
+	
+	
+	
+}
+

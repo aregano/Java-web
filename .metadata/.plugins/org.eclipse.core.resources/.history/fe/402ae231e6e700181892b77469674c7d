@@ -1,0 +1,38 @@
+package com.alvaro.database;
+
+import java.util.ArrayList;
+
+import com.alvaro.models.Cancion;
+import com.alvaro.models.Usuario;
+
+public class BBDDCanciones {
+	
+	public ArrayList<Cancion> canciones = new ArrayList<Cancion>();
+
+	public BBDDCanciones() {
+		this.fillCanciones();
+	}
+	
+	private boolean fillCanciones() {
+		canciones.add(new Cancion(1, "Song", "Author", "mp3"));
+		canciones.add(new Cancion(2, "Song", "Author1","mp3"));
+		canciones.add(new Cancion(3, "Song", "Author2","mp3"));
+	                                                   
+		return true;
+		
+		
+	}
+	
+	public Cancion getCancionById(int id) {
+		Cancion usuarioADevolver = null;
+		
+		for (Cancion unaCancion : canciones) {
+			if (unaCancion.getId() == id) {
+				cancionADevolver = unaCancion;
+				break; //acabas con las iteraciones
+				}
+			}		
+		return cancionADevolver;
+	}
+	
+}

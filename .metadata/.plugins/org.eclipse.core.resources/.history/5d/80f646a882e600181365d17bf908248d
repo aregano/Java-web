@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Datos de la Habitación</h1>
+	<ul>
+		<li>Habitacion Id: ${requestScope.laHabitacion.hid}</li>
+		<li>Dirección: ${requestScope.laHabitacion.address}</li>
+		<li>Número: ${requestScope.laHabitacion.number}</li>
+		<li>Ciudad: ${requestScope.laHabitacion.ciudad}</li>
+	
+</body>
+</html>

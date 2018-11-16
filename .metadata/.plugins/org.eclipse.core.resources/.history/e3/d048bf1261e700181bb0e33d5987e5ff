@@ -1,0 +1,17 @@
+package com.alvaro.database;
+
+import com.alvaro.models.Cancion;
+
+public class BBDDCanciones {
+
+	private boolean fillUsuarios() {
+		canciones.add(new Cancion(1, "Song", "Author", "mp3"));
+		canciones.add(new Cancion(2, "Song", "Authors","mp3"));
+		canciones.add(new Cancion(3, "Song", "Authors","mp3"));
+	                                                   
+		return true;
+		
+		
+	}
+	
+}

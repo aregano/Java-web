@@ -1,0 +1,19 @@
+body{
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 2em;
+}
+
+li{
+	border: 5 px solid blue;
+	display: inline-block;
+	
+}
+
+.error{
+	color: red;
+}

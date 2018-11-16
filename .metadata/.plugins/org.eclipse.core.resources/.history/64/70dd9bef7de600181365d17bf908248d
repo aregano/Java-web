@@ -1,0 +1,17 @@
+package com.alvaro.models;
+
+public class Habitacion {
+
+
+	 private int hid;
+	 private String address;
+	 private int number;
+	 
+	public Usuario(int hid, String address, int number) {
+		super();
+		this.hid = hid;
+		this.address = address;
+		this.number = number;
+	}
+	
+}
