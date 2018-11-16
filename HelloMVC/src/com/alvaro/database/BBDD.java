@@ -36,9 +36,9 @@ public class BBDD {
 	}
 	
 	private boolean fillHabitaciones () {
-		habitaciones.add(new Habitacion(1, "Marques 26", 256, "Madrid"));
-		habitaciones.add(new Habitacion(2, "Provenzal 4", 25, "Madrid"));
-		habitaciones.add(new Habitacion(3, "Roca 20", 56, "Madrid"));
+		habitaciones.add(new Habitacion(1, "Marques", 256, "Madrid"));
+		habitaciones.add(new Habitacion(2, "Provenzal", 25, "Madrid"));
+		habitaciones.add(new Habitacion(3, "Roca", 56, "Madrid"));
 		
 		return true;
 	}
@@ -94,7 +94,7 @@ public class BBDD {
 		return existeUsuario;
 	
 //	public boolean existeUsuarioPorEmailYPass(String emailrecibido, String passwordrecibido) {
-//		// TODO Auto-generated method stub
+
 //		return false;
 //	}
 	}
@@ -107,6 +107,17 @@ public class BBDD {
 		this.usuarios.add(nuevoUser1);
 		
 		return nuevoId;
+		
+	}
+
+	public int insertaHabitacion(Habitacion nuevaHab1) {
+		int nuevoHid=0;
+		
+		nuevoHid=this.habitaciones.size()+1; //simulamos que la bd asigna un id consecutivo
+		nuevaHab1.setHid(nuevoHid);
+		this.habitaciones.add(nuevaHab1);
+		
+		return nuevoHid;
 		
 	}
 	

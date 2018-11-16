@@ -38,6 +38,8 @@ ${requestScope.laHabitacion}
    			</li> 
 		</c:forEach> 
 	</ul>
+	
+	<div><a href="./newuser">Crear Usuario</a></div>
 
 </body>
 </html>

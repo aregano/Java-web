@@ -1,8 +1,17 @@
 console.log("hola")
 
+document.getElementById("Btncrearhab").onclick = function(evnt) {
+	evnt.preventDefault();
+
+	window.location.href = "./newroom";
+
+}
+
+
 document.getElementById('BtnVolver').onclick = function(){
 	window.history.back();
 }
+
 
 //function validatePassword() {
 //    var password = document.getElementById('password')

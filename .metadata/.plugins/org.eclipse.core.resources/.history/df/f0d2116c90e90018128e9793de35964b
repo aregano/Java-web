@@ -1,0 +1,55 @@
+package com.alvaro.controllers;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.alvaro.database.BBDD;
+import com.alvaro.models.Habitacion;
+import com.alvaro.models.Usuario;
+
+/**
+ * Servlet implementation class CrearHabitacion
+ */
+@WebServlet("/newroom")
+public class CrearHabitacion extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public CrearHabitacion() {
+        super();
+
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		request.getRequestDispatcher("./newroom.jsp").forward(request, response);
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String direccionrecibida = request.getParameter("address");
+		String numerorecibido = request.getParameter("number");
+		String ciudadrecibida = request.getParameter("ciudad");
+		
+		int numerorecibidoint = Integer.parseInt(numerorecibido);
+		
+		System.out.println("Direccion: "+direccionrecibida);
+
+		
+		Habitacion nuevaHab = new Habitacion(0, direccionrecibida, numerorecibidoint, ciudadrecibida);
+		
+		BBDD bd = BBDD.getInstance();
+		
+		bd.insertaHabitacion(nuevaHab);
+					
+		response.sendRedirect("newuser");
+		
+		
+
+	}
+
+}

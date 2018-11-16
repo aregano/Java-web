@@ -30,27 +30,34 @@
 		<!-- 		<div><input type="email" placeholder="Confirmar Email" name="email" id="conf_email" required/></div>-->
 		<div>
 			<input type="password" placeholder="Contraseña" name="password"
-				value="${newusuario.password}" id="password" required />
+				value="${newusuario.password}" id="password" />
 		</div>
 
 		<div>
 			<input type="password" placeholder="Confirmar contraseña"
-				name="conf_password" id="conf_password" required />
+				name="conf_password" id="conf_password"  />
 		</div>
 		<div>
 			<label for="habitacion">Habitación</label> 
-			<select name="habitacion"id="habitacion">				
+			<select name="habitacion"id="habitacion">
+				<option selected disabled>Elegir Habitación</option>				
 				<c:forEach var="unahab" items="${lasHabitaciones}">
-					<option value="${unahab.hid}">${unahab.address}</option>
+					<option value="${unahab.hid}">${unahab.address}, ${unahab.number}, ${unahab.ciudad}</option>
 				</c:forEach>
 			</select>
 			<!-- Aqui va la habitacion -->
 		</div>
+		<button id="Btncrearhab">Crear Habitacion</button>
 		<button>Enviar</button>
 	</form>
+	
+		
+	
+		<div><a href="./newroom">Crear Habitacion</a></div>
 
 
 </body>
 
-<!-- <script type="text/javascript" src="./js/script.js"></script> -->
+<script src="./js/script.js"></script>
+
 </html>

@@ -48,6 +48,17 @@ public class Habitacion {
 	}
 	
 	
+	public boolean esValido() {
+		boolean esValid = true;
+		
+		if (this.address==null || this.address.equals("")) esValid=false;
+		
+//		if (!this.address.matches("(.*)?[0-9](.*)?")) esValid = false;
+		
+		if (this.number<=0) esValid=false;
+	
+		return esValid;
+	}
 	
 }
 

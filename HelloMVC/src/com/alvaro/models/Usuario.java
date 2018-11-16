@@ -78,6 +78,9 @@ public class Usuario {
 
 		// confirmar email
 //		if(!this.email.equals(emailconfirmado)) validx=false;
+		
+		if(this.habitacion==null)
+			validx = false;
 
 		return validx;
 	}
