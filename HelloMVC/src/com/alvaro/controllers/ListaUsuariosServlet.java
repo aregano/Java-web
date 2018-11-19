@@ -11,25 +11,16 @@ import javax.servlet.http.HttpSession;
 import com.alvaro.database.BBDD;
 import com.alvaro.models.Usuario;
 
-/**
- * Servlet implementation class ListaUsuariosServlet
- */
 @WebServlet("/listausuarios")
 public class ListaUsuariosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
+
 	public ListaUsuariosServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -51,10 +42,7 @@ public class ListaUsuariosServlet extends HttpServlet {
 		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

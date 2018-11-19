@@ -79,7 +79,7 @@ public class BBDD {
 	}
 
 	public boolean existeUsuarioPorEmailYPass(String emailrecibido, String passwordrecibido) {
-		// TODO Auto-generated method stub
+		
 		boolean existeUsuario = false;
 		
 		
@@ -121,4 +121,19 @@ public class BBDD {
 		
 	}
 	
+	public boolean deleteUsuario(int id) {
+		
+		for (Usuario unUsuario : this.usuarios) {
+			if (unUsuario.getId() == id) {
+				this.usuarios.remove(unUsuario);
+				break; //acabas con las iteraciones
+				}
+			}
+		
+		
+		
+		return true;
+		
+				
+	}
 }

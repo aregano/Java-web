@@ -1,0 +1,23 @@
+<web-app version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>addAmigoServlet</servlet-name>
+  	<display-name>addAmigoServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.alvaro.controllers.addAmigoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addFriendServlet</servlet-name>
+  	<display-name>addFriendServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.alvaro.controllers.addFriendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addAmigoServlet</servlet-name>
+  	<url-pattern>/addAmigoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addFriendServlet</servlet-name>
+  	<url-pattern>/addfriend</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,17 +1,39 @@
 console.log("hola")
 
-document.getElementById("Btncrearhab").onclick = function(evnt) {
+if(document.getElementById('Btncrearhab'))document.getElementById("Btncrearhab").onclick = function(evnt) {
 	evnt.preventDefault();
 
 	window.location.href = "./newroom";
 
-}
+	}
 
 
-document.getElementById('BtnVolver').onclick = function(){
+if(document.getElementById('BtnVolver'))document.getElementById('BtnVolver').onclick = function(){
 	window.history.back();
-}
+	}
 
+$('#enviarBtn').click(function(e){
+	e.preventDefault();
+	console.log("Validando!!");
+	
+	document.querySelectorAll('.error').forEach(elem => {
+		elem.classList.add('esconder');
+	});
+
+	if(document.getElementById("nuevousuarioform").checkValidity()){
+		return true;
+	}
+
+	else{ if(!document.getElementById("email").checkValidity()){
+		document.getElementById("emailerr").classList.remove("esconder")
+			}
+		
+		if (!document.getElementById("password").checkValidity()){
+			document.getElementById("passworderr").classList.remove("esconder")
+			}
+	}
+	
+})
 
 //function validatePassword() {
 //    var password = document.getElementById('password')

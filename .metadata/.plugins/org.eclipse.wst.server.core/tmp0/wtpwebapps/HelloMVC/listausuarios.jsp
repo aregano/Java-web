@@ -35,6 +35,7 @@ ${requestScope.laHabitacion}
    					<div>( ${unUsuario.id} )</div>
    					<div>${unUsuario.name}</div>
    				</a>
+   				<a href="./delete?id=${unUsuario.id}">X</a>
    			</li> 
 		</c:forEach> 
 	</ul>
